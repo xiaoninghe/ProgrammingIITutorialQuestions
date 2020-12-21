@@ -80,8 +80,8 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | ☑️| [7206](questions/7206.md) | *Understanding references*        | SimpleObjects           |             | [Solution](solutions/7206.md) |
 | ☑️| [937d](questions/937d.md) | *Flawed rectangle*                | SimpleObjects           |             | [Solution](solutions/937d.md) |
 | ☑️| [bdb4](questions/bdb4.md) | *Flawed house*                    | SimpleObjects           |             | [Solution](solutions/bdb4.md) |
-|    | [0378](questions/0378.md) | *Comparing people*                | Interfaces              |             | [Solution](solutions/0378.md) |
-|    | [6346](questions/6346.md) | *Depth of arithmetic expressions* | Interfaces              |             | [Solution](solutions/6346.md) |
+|  ✅  | [0378](questions/0378.md) | *Comparing people*                | Interfaces              |             | [Solution](solutions/0378.md) |
+| ☑️| [6346](questions/6346.md) | *Depth of arithmetic expressions* | Interfaces              |             | [Solution](solutions/6346.md) |
 |    | [e6fd](questions/e6fd.md) | *Bit sets*                        | Interfaces              |             | [Solution](solutions/e6fd.md) |
 |    | [fe94](questions/fe94.md) | *Using Stream.map and Stream.filter* | Functional              |             | [Solution](solutions/fe94.md) |
 |    | [68e6](questions/68e6.md) | *Using Stream.reduce*             | Functional              |             | [Solution](solutions/68e6.md) |
