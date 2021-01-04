@@ -31,7 +31,6 @@ public class Fighter {
   public int calculateDamage() {
     return DAMAGE_VALUE;
   }
-
   public int calculateAttackScore() {
     return skill + theGameEngine.rollDice()
         + theGameEngine.rollDice();

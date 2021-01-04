@@ -85,12 +85,12 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | ☑️| [e6fd](questions/e6fd.md) | *Bit sets*                        | Interfaces              |             | [Solution](solutions/e6fd.md) |
 | ✅   | [fe94](questions/fe94.md) | *Using Stream.map and Stream.filter* | Functional              |             | [Solution](solutions/fe94.md) |
 | ✅   | [68e6](questions/68e6.md) | *Using Stream.reduce*             | Functional              |             | [Solution](solutions/68e6.md) |
-|    | [0f05](questions/0f05.md) | *Coloured points*                 | Inheritance             |             | [Solution](solutions/0f05.md) |
-|    | [dd4c](questions/dd4c.md) | *Clocks*                          | Inheritance             |             | [Solution](solutions/dd4c.md) |
-|    | [8f65](questions/8f65.md) | *Lucky battling fighters with inheritance* | Inheritance    | [8d24](questions/8d24.md) | [Solution](solutions/8f65.md) |
-|    | [845d](questions/845d.md) | *Books and dictionaries*          | Inheritance             |             | [Solution](solutions/845d.md) |
-|    | [e93f](questions/e93f.md) | *Apparent and actual types*       | Inheritance             |             | [Solution](solutions/e93f.md) |
-|    | [d3f5](questions/d3f5.md) | *Streams and downcasting*         | Functional, Inheritance, Generics |             | [Solution](solutions/d3f5.md) |
+| ✅   | [0f05](questions/0f05.md) | *Coloured points*                 | Inheritance             |             | [Solution](solutions/0f05.md) |
+| ✅   | [dd4c](questions/dd4c.md) | *Clocks*                          | Inheritance             |             | [Solution](solutions/dd4c.md) |
+| ☑️| [8f65](questions/8f65.md) | *Lucky battling fighters with inheritance* | Inheritance    | [8d24](questions/8d24.md) | [Solution](solutions/8f65.md) |
+| ☑️| [845d](questions/845d.md) | *Books and dictionaries*          | Inheritance             |             | [Solution](solutions/845d.md) |
+| ☑️| [e93f](questions/e93f.md) | *Apparent and actual types*       | Inheritance             |             | [Solution](solutions/e93f.md) |
+| ✅   | [d3f5](questions/d3f5.md) | *Streams and downcasting*         | Functional, Inheritance, Generics |             | [Solution](solutions/d3f5.md) |
 |    | [5235](questions/5235.md) | *Equality between points*         | ObjectEquality          | [0f05](questions/0f05.md) | [Solution](solutions/5235.md) |
 |    | [710c](questions/710c.md) | *The consequences of overriding `equals`* | ObjectEquality  | [5235](questions/5235.md) | [Solution](solutions/710c.md) |
 |    | [aa68](questions/aa68.md) | *Symmetric equality testing*      | ObjectEqualilty         | [5235](questions/5235.md) | [Solution](solutions/aa68.md) |
