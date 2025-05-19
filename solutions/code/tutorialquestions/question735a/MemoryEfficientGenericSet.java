@@ -6,10 +6,10 @@ import java.util.List;
 
 public class MemoryEfficientGenericSet<E> implements GenericSet<E> {
 
-  private List<E> elements;
+  private final List<E> elements;
 
   public MemoryEfficientGenericSet() {
-    elements = new ArrayList<E>();
+    elements = new ArrayList<>();
   }
 
   @Override
@@ -42,7 +42,7 @@ public class MemoryEfficientGenericSet<E> implements GenericSet<E> {
 
   private class MemoryEfficientGenericSetIterator implements GenericIterator<E> {
 
-    private Iterator<E> iterator;
+    private final Iterator<E> iterator;
 
     private MemoryEfficientGenericSetIterator() {
       iterator = elements.iterator();

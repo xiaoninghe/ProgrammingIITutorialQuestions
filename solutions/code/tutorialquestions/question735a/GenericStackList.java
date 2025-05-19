@@ -6,10 +6,10 @@ import java.util.ListIterator;
 
 public class GenericStackList<E> implements GenericStack<E> {
 
-  private List<E> elements;
+  private final List<E> elements;
 
   public GenericStackList() {
-    elements = new ArrayList<E>();
+    elements = new ArrayList<>();
   }
 
   public void push(E item) {
@@ -34,7 +34,7 @@ public class GenericStackList<E> implements GenericStack<E> {
 
   private class GenericStackListIterator implements GenericIterator<E> {
 
-    private ListIterator<E> iterator;
+    private final ListIterator<E> iterator;
 
     private GenericStackListIterator() {
       iterator = elements.listIterator(elements.size());

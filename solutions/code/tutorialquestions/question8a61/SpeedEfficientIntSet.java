@@ -5,10 +5,10 @@ import java.util.Set;
 
 public class SpeedEfficientIntSet implements IntSet {
 
-  private Set<Integer> elements;
+  private final Set<Integer> elements;
 
   public SpeedEfficientIntSet() {
-    elements = new HashSet<Integer>();
+    elements = new HashSet<>();
   }
 
   @Override

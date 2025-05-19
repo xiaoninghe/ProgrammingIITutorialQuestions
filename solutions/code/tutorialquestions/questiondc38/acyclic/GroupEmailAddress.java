@@ -5,11 +5,11 @@ import java.util.Set;
 
 public class GroupEmailAddress extends EmailAddress {
 
-  private Set<EmailAddress> members;
+  private final Set<EmailAddress> members;
 
   public GroupEmailAddress(String identifier) {
     super(identifier);
-    members = new HashSet<EmailAddress>();
+    members = new HashSet<>();
   }
 
   public void addEmailAddress(EmailAddress emailAddress) {
@@ -19,7 +19,7 @@ public class GroupEmailAddress extends EmailAddress {
   @Override
   public Set<EmailAddress> getTargets() {
 
-    Set<EmailAddress> result = new HashSet<EmailAddress>();
+    Set<EmailAddress> result = new HashSet<>();
 
     for (EmailAddress e : members) {
       result.addAll(e.getTargets());

@@ -11,11 +11,11 @@ public class PigLatin {
    */
   public static void main(String[] args) throws IOException {
 
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+    final StringBuilder stringBuilder = new StringBuilder();
 
     String line = br.readLine();
-
-    StringBuilder stringBuilder = new StringBuilder();
 
     while (line != null) {
       stringBuilder.append(translateLineToPigLatin(line));
@@ -28,18 +28,18 @@ public class PigLatin {
 
   private static String translateLineToPigLatin(String line) {
 
-    StringBuilder builder = new StringBuilder();
+    final StringBuilder builder = new StringBuilder();
 
-    String word = "";
+    StringBuilder word = new StringBuilder();
 
     for (int i = 0; i < line.length(); i++) {
 
       if (Character.isLetterOrDigit(line.charAt(i))) {
-        word += line.charAt(i);
+        word.append(line.charAt(i));
       } else {
         if (word.length() > 0) {
-          builder.append(translateToPigLatin(word));
-          word = "";
+          builder.append(translateToPigLatin(word.toString()));
+          word = new StringBuilder();
         }
         builder.append(line.charAt(i));
       }
@@ -67,23 +67,15 @@ public class PigLatin {
 
     return (Character.isUpperCase(word.charAt(0)) ? Character
         .toUpperCase(word.charAt(1)) : word.charAt(1))
-        + word.substring(2, word.length())
+        + word.substring(2)
         + Character.toLowerCase(word.charAt(0)) + "ay";
   }
 
   private static boolean isVowel(char c) {
-
-    switch (Character.toLowerCase(c)) {
-      case 'a':
-      case 'e':
-      case 'i':
-      case 'o':
-      case 'u':
-        return true;
-      default:
-        return false;
-    }
-
+    return switch (Character.toLowerCase(c)) {
+      case 'a', 'e', 'i', 'o', 'u' -> true;
+      default -> false;
+    };
   }
 
 }

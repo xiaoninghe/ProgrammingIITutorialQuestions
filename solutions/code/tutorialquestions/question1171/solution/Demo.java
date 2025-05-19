@@ -6,11 +6,11 @@ public class Demo {
   public static void main(String[] args) {
 
     // Make some nodes
-    GraphNode<String> original = new GraphNode<String>();
+    GraphNode<String> original = new GraphNode<>();
     original.setKey("Hello");
-    GraphNode<String> child1 = new GraphNode<String>();
+    GraphNode<String> child1 = new GraphNode<>();
     child1.setKey("Child 1");
-    GraphNode<String> child2 = new GraphNode<String>();
+    GraphNode<String> child2 = new GraphNode<>();
     child1.setKey("Child 2");
 
     // Join them up
@@ -20,7 +20,7 @@ public class Demo {
     child2.addSuccessor(original); // Creates a cycle
 
     // Clone original
-    GraphNode<String> clone = (GraphNode<String>) original.clone();
+    GraphNode<String> clone = original.clone();
 
     // Check that the clone uses distinct nodes
     assert original != clone;

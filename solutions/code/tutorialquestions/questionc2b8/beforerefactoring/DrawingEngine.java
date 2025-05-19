@@ -5,10 +5,10 @@ import java.util.Set;
 
 public class DrawingEngine {
 
-  private Set<Rectangle> rectangles;
+  private final Set<Rectangle> rectangles;
 
   public DrawingEngine() {
-    rectangles = new HashSet<Rectangle>();
+    rectangles = new HashSet<>();
   }
 
   public void addRectangle(Rectangle rectangle) {
@@ -46,11 +46,11 @@ public class DrawingEngine {
 
   public String toString() {
 
-    String result = "Drawing engine is looking after these rectangles:";
+    final StringBuilder result = new StringBuilder("Drawing engine is looking after these rectangles:");
     for (Rectangle r : rectangles) {
-      result += "\n   " + rectangleToString(r);
+      result.append("\n   ").append(rectangleToString(r));
     }
-    return result;
+    return result.toString();
 
   }
 

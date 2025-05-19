@@ -4,7 +4,7 @@ package tutorialquestions.questionc822.precondition;
 public class TreeNode<E> {
 
   private E key;
-  private TreeNode<E>[] children;
+  private final TreeNode<E>[] children;
   private int numberOfParents;
 
   @SuppressWarnings("unchecked")
@@ -47,7 +47,7 @@ public class TreeNode<E> {
   }
 
   public TreeNode<E> clone() {
-    TreeNode<E> result = new TreeNode<E>(getNumberOfChildren());
+    TreeNode<E> result = new TreeNode<>(getNumberOfChildren());
     for (int i = 0; i < getNumberOfChildren(); i++) {
       result.setChild(i, getChild(i).clone());
     }

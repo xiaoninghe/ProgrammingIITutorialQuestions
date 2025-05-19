@@ -10,7 +10,7 @@ public class Point {
   private final int coordY;
   private final int coordZ;
 
-  private static Map<Point, WeakReference<Point>> pool = new WeakHashMap<>();
+  private static final Map<Point, WeakReference<Point>> pool = new WeakHashMap<>();
 
   private Point(int coordX, int coordY, int coordZ) {
     this.coordX = coordX;
@@ -27,7 +27,7 @@ public class Point {
       return pool.get(point).get();
       // point will now be garbage collected
     }
-    pool.put(point, new WeakReference<Point>(point));
+    pool.put(point, new WeakReference<>(point));
     return point;
   }
 
@@ -38,8 +38,7 @@ public class Point {
 
   @Override
   public boolean equals(Object that) {
-    return that != null
-        && that instanceof Point
+    return that instanceof Point
         && coordX == ((Point) that).coordX
         && coordY == ((Point) that).coordY
         && coordZ == ((Point) that).coordZ;
@@ -47,9 +46,9 @@ public class Point {
 
   @Override
   public int hashCode() {
-    return new Integer(coordX).hashCode()
-        ^ new Integer(coordY).hashCode()
-        ^ new Integer(coordZ).hashCode();
+    return Integer.valueOf(coordX).hashCode()
+        ^ Integer.valueOf(coordY).hashCode()
+        ^ Integer.valueOf(coordZ).hashCode();
   }
 
   /**
